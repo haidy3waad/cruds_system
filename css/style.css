@@ -1,0 +1,37 @@
+span {
+background-color: yellow;
+}
+
+#updatebtn{
+    display: none;
+}
+body{
+    background-color: #5B8B6C;
+}
+
+#btndelete{
+    background-color: #5B8B6C;
+    color: aliceblue;
+    transition: all 0.5s;
+}
+#btndelete:hover{
+    background-color: #1b522e;
+}
+
+#btnup{
+    background-color: #293e30;
+    color: aliceblue;
+    transition: all 0.5s;
+}
+
+#btnup:hover{
+    background-color: #83ae91;
+}
+h1{
+    color: antiquewhite;
+}
+#alert{
+    display: none;
+}
+
+

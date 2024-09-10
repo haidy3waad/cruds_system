@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>CRUDs</title>
+</head>
+
+<body>
+
+    <div id="crud" class="w-50 m-auto shadow-lg my-4 p-5 ">
+        <h1 class="text-center">CRUDs System</h1>
+        <input id="prodName" type="text" placeholder="Enter Product Name " class="form-control my-3">
+        <div class="alert alert-danger" id="alert">Invalid Name</div>
+        <input id="prodCat" type="text" placeholder="Enter Product Category" class="form-control my-3">
+        <div class="alert alert-danger" id="alert">Invalid Category</div>
+        <input id="prodPrice" type="number" placeholder="Enter Product Price " class="form-control my-3">
+        <textarea name="" id="prodDesc" placeholder="Enter product Description" class="form-control my-3" cols="30"
+            rows="7"></textarea>
+            <div class="alert alert-danger" id="alert">Invalid Description</div>
+        <button onclick="addprod()" class="btn btn-outline-light" id="btnadd"> Add product</button>
+        <button onclick="updateproduct()" class="btn btn-outline-light" id="updatebtn"> Update product</button>
+
+        <input onkeyup="search(this.value)" type="text" id="search" class="form-control my-3" placeholder="Search...">
+    </div>
+    <div class="container">
+        <table  class="table table-control text-center table-hover table-light" >
+            <thead>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Delete</th>
+                <th>Update</th>
+            </thead>
+            <tbody id="tbodyID">
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
